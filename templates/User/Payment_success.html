@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<!-- Mirrored from transvelo.github.io/skola-html/5.1/shop-order-completed.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Lora:wght@400;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="{% static 'sources/fonts/fontawesome/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'sources/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'sources/libs/aos/dist/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'sources/libs/choices.js/public/sources/styles/choices.min.css' %}">
+    <link rel="stylesheet" href="{% static 'sources/libs/flickity-fade/flickity-fade.css' %}">
+    <link rel="stylesheet" href="{% static 'sources/libs/flickity/dist/flickity.min.css' %}">
+    <link rel="stylesheet" href="{% static 'sources/libs/highlightjs/styles/vs2015.css' %}">
+    <link rel="stylesheet" href="{% static 'sources/libs/jarallax/dist/jarallax.css' %}">
+    <link rel="stylesheet" href="{% static 'sources/libs/quill/dist/quill.core.css' %}" />
+
+    <!-- Map -->
+    <link href='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'sources/css/theme.min.css' %}">
+
+    <title>Payment Success | FilmiView</title>
+
+    <style>
+        .heading{
+            font-family: 'Brush Script MT', cursive;
+            font-size: 60px;
+        }
+
+        .navbar_heading{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="bg-white woocommerce-order-received">
+
+    <!-- SHOP ORDER COMPLETED
+    ================================================== -->
+    <div class="container py-8 py-lg-11">
+        <div class="row">
+            <div class="col-xl-8 mx-xl-auto">
+                <header class="entry-header">
+                    <h1 class="entry-title">Registration Successful</h1>
+                </header>
+
+                <div class="entry-content">
+                    <div class="woocommerce">
+                        <div class="woocommerce-order">
+                            <p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">Thank you. Your Payment has been received.</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div style="size:20px;" align="center">
+                        <a href="{% url 'login' %}">
+                            <button type="button" class="btn btn-primary btn-lg mb-1">
+                                Login
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+                            <!--<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
+
+                                <li class="woocommerce-order-overview__date date">
+                                    Date:
+                                    <strong>November 16, 2020</strong>
+                                </li>
+
+                                <li class="woocommerce-order-overview__total total">
+                                    Total:
+                                    <strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>109.95</span></strong>
+                                </li>
+
+                                <li class="woocommerce-order-overview__payment-method method">
+                                    Payment method:
+                                    <strong>Check payments</strong>
+                                </li>
+                            </ul>
+
+                            <section class="woocommerce-order-details">
+                                <h2 class="woocommerce-order-details__title">Order details</h2>
+                                <table class="woocommerce-table woocommerce-table--order-details shop_table order_details">
+                                    <thead>
+                                        <tr>
+                                            <th class="woocommerce-table__product-name product-name">Product</th>
+                                            <th class="woocommerce-table__product-table product-total">Total</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class="woocommerce-table__line-item order_item">
+                                            <td class="woocommerce-table__product-name product-name">
+                                                <a href="#">Hoodie</a>
+                                                <strong class="product-quantity">× 2</strong>
+                                            </td>
+
+                                            <td class="woocommerce-table__product-total product-total">
+                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>59.00</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="woocommerce-table__line-item order_item">
+                                            <td class="woocommerce-table__product-name product-name">
+                                                <a href="#">Seo Books</a>
+                                                <strong class="product-quantity">× 1</strong>
+                                            </td>
+
+                                            <td class="woocommerce-table__product-total product-total">
+                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>67.00</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="row">Subtotal:</th>
+                                            <td><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>109.95</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Payment method:</th>
+                                            <td>Check payments</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Total:</th>
+                                            <td><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>109.95</span></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </section>
+
+                            <section class="woocommerce-customer-details">
+                                <h2 class="woocommerce-column__title">Billing address</h2>
+                                <address>
+                                    Mohamed Anas<br>12 Maraicoir street<br>chennai 600001<br>Tamil Nadu, India
+                                    <p class="woocommerce-customer-details--phone">90909090</p>
+                                    <p class="woocommerce-customer-details--email">anas@gmail.com</p>
+                                </address>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="{% static 'sources/libs/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'sources/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'sources/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'sources/libs/aos/dist/aos.js' %}"></script>
+    <script src="{% static 'sources/libs/choices.js/public/sources/scripts/choices.min.js' %}"></script>
+    <script src="{% static 'sources/libs/countup.js/dist/countUp.min.js' %}"></script>
+    <script src="{% static 'sources/libs/dropzone/dist/min/dropzone.min.js' %}"></script>
+    <script src="{% static 'sources/libs/flickity/dist/flickity.pkgd.min.js' %}"></script>
+    <script src="{% static 'sources/libs/flickity-fade/flickity-fade.js' %}"></script>
+    <script src="{% static 'sources/libs/highlightjs/highlight.pack.min.js' %}"></script>
+    <script src="{% static 'sources/libs/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'sources/libs/isotope-layout/dist/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'sources/libs/jarallax/dist/jarallax.min.js' %}"></script>
+    <script src="{% static 'sources/libs/jarallax/dist/jarallax-video.min.js' %}"></script>
+    <script src="{% static 'sources/libs/jarallax/dist/jarallax-element.min.js' %}"></script>
+    <script src="{% static 'sources/libs/parallax-js/dist/parallax.min.js' %}"></script>
+    <script src="{% static 'sources/libs/quill/dist/quill.min.js' %}"></script>
+    <script src="{% static 'sources/libs/smooth-scroll/dist/smooth-scroll.min.js' %}"></script>
+    <script src="{% static 'sources/libs/typed.js/lib/typed.min.js' %}"></script>
+
+    <!-- Map -->
+    <script src='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="{% static 'sources/js/theme.min.js"></script>
+
+
+</body>
+
+<!-- Mirrored from transvelo.github.io/skola-html/5.1/shop-order-completed.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:25 GMT -->
+</html>
